@@ -181,6 +181,15 @@ h3 {
   width: 100%
 }
 
+.pokedex-screenshot{
+  grid-area: photo;
+}
+
+.pokedex-screenshot>img {
+  object-fit: cover;
+  width: 100%
+}
+
 .project-list_item--githublink {
   color: var(--primary-color);
 }
