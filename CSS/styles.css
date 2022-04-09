@@ -163,6 +163,24 @@ h3 {
   display: inline-block;
 }
 
+.mymovies-screenshot{
+  grid-area: photo;
+}
+
+.mymovies-screenshot>img {
+  object-fit: cover;
+  width: 100%
+}
+
+.meet-app-screenshot{
+  grid-area: photo;
+}
+
+.meet-app-screenshot>img {
+  object-fit: cover;
+  width: 100%
+}
+
 .project-list_item--githublink {
   color: var(--primary-color);
 }
