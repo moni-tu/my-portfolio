@@ -48,7 +48,6 @@ h3 {
   text-decoration: underline;
 }  
 
-
 .github-anchor {
   color: var(--primary-color);
 }
@@ -157,10 +156,11 @@ h3 {
 }
 
 .project-list_item {
-  background-color: var(--secondary-color);
+  background-color: #338fdca1;
   width: auto;
   min-height: auto;
   display: inline-block;
+  padding: 20px;
 }
 
 .mymovies-screenshot{
@@ -234,6 +234,11 @@ adapt CSS rules for different devices */
 
 .about-body {
   text-align: center;
+}
+
+.about-table {
+  padding-top: 20px;
+  margin:0 auto
 }
 
 .contact-body {
