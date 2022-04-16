@@ -163,7 +163,7 @@ a {
 }
 
 .project-list_item {
-  background-color: #338fdca1;
+  background-color: rgba(68, 30, 240, 0.365);
   width: auto;
   min-height: auto;
   display: inline-block;
