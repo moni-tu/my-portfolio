@@ -48,6 +48,13 @@ h3 {
   text-decoration: underline;
 }  
 
+a {
+  color: #7010ac;
+  text-decoration: none;
+  transition: 0.25s color;
+}
+
+#ad84c6
 .github-anchor {
   color: var(--primary-color);
 }
