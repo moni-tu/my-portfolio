@@ -256,14 +256,23 @@ height: 600px;
   /* max-width: 700px; */
   /* margin: auto; */
 }
-
-.profile-intro {
-  max-width: 900px;
-  margin-left: 300px;
-  margin-bottom: 100px;
-  text-align: left;
+/* For Mobile */
+@media screen and (max-width: 950px) {
+  .profile-intro {
+    /* max-width: 900px; */
+    margin-left: 3px;
+    /* margin-bottom: 100px; */
+    text-align: left;
+  }
 }
-
+@media screen and (min-width: 950px) {
+  .profile-intro {
+    max-width: 900px;
+    margin-left: 300px;
+    /* margin-bottom: 100px; */
+    text-align: left;
+  }
+}
 .about-body {
   text-align: left;
   padding-top: 5px;
