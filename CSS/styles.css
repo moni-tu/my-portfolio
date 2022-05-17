@@ -75,7 +75,7 @@ a {
   font-family: inherit;
   display: inline-block;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--primary-color);
+  background-color:  rgba(68, 30, 240, 0.365);
   color: white;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
@@ -245,7 +245,30 @@ adapt CSS rules for different devices */
 
 .about-table {
   padding-top: 20px;
-  margin:0 auto
+  margin:0 auto;
+  width: 35%;
+}
+
+.about-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.about-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.about-table tr:hover {background-color: #ddd;}
+
+.about-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:  rgba(68, 30, 240, 0.365);
+  color: white;
 }
 
 .contact-body {
