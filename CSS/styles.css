@@ -77,6 +77,7 @@ a {
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color:  rgba(68, 30, 240, 0.365);
   color: white;
+  font-size: 15px;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -241,6 +242,10 @@ adapt CSS rules for different devices */
 
 .about-body {
   text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .about-table {
