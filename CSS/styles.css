@@ -239,6 +239,10 @@ adapt CSS rules for different devices */
     font-size: 22px;
   }
 }
+/* the following code does not work, the background color does not change! */
+.contact-page .profile .work-body {
+background-color: rgb(253, 251, 251)
+}
 
 .about-body {
   text-align: center;
@@ -246,6 +250,7 @@ adapt CSS rules for different devices */
   padding-bottom: 5px;
   padding-right: 10%;
   padding-left: 10%;
+  background-color: rgb(253, 251, 251);
 }
 
 .about-table {
