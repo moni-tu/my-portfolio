@@ -241,6 +241,7 @@ adapt CSS rules for different devices */
 /* the following code does not work, the background color does not change! */
 .contact-page {
 background-color: lightgray;
+height: 600px;
 }
 
 .work-body {
