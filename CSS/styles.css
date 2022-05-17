@@ -48,6 +48,11 @@ h3 {
   text-decoration: underline;
 }  
 
+h4 {
+  color: rgba(68, 30, 240, 0.365);
+  /* text-shadow: white; */
+}
+
 a {
   color: #7010ac;
   text-decoration: none;
