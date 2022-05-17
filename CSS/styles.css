@@ -241,6 +241,8 @@ background-color: lightgray;
 
 .work-body {
   background-color: lightgray;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 
 .profile {
@@ -258,11 +260,11 @@ background-color: lightgray;
 }
 
 .about-body {
-  text-align: center;
+  text-align: left;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 5%;
+  padding-left: 3%;
   background-color: lightgray;
 }
 
@@ -270,6 +272,7 @@ background-color: lightgray;
   padding-top: 20px;
   margin:0 auto;
   width: 35%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .about-table td {
@@ -305,6 +308,10 @@ border: 4px solid #ddd;
 
 .hobby-list {
   list-style-type: none;
+}
+
+.berlin-illustration {
+  margin-left: 380px;
 }
 
 @keyframes color-change {
