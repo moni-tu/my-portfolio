@@ -235,9 +235,14 @@ adapt CSS rules for different devices */
   }
 }
 /* the following code does not work, the background color does not change! */
-.contact-page .work-body {
-background-color: rgb(253, 251, 251);
+.contact-page {
+background-color: lightgray;
 }
+
+.work-body {
+  background-color: lightgray;
+}
+
 .profile {
   background-color:lightgray;
   height: 575px;
