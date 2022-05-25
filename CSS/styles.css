@@ -282,6 +282,11 @@ height: 600px;
   padding: 60px;
 }
 
+.about-grid_item_animation_memes {
+  display: flex;
+  text-align: center;
+}
+
 .learning-sticker{
   height: 100px;
   width: 100px;
@@ -299,10 +304,15 @@ height: 600px;
 }
 
 .joda-meme {
-  margin-top: 120px;
+  /* margin-top: 120px; */
   height: 200px;
   width: 300px;
   
+}
+
+.elonmusk-meme {
+  height: 200px;
+  width: 300px;
 }
 
 /* For Mobile */
