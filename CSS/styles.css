@@ -30,30 +30,38 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
-
+/* About page title */
 h1 {
   font-size: 50px;
   color: --secondary-color;
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-        
+  /* About page grid titles */     
 h2 {
   font-size: 40px;
   color: whitesmoke;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-        
+/* work page header, where there is an inversion of colors from About page */    
 h3 {
-  font-size: 18px;
-  font-weight: 700;
-}  
-
-h4 {
+  font-size: 50px;
   color: whitesmoke;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}  
+/* work page project item title */ 
+h4 {
+  color: var(--secondary-color);
   font-size: 40px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* text-shadow: white; */
+}
+/* Work page "description" */
+h5 {
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
@@ -164,7 +172,7 @@ a {
 }
 
 .project-list_item {
-  background-color: rgba(68, 30, 240, 0.365);
+  background-color: var(--primary-color);
   width: auto;
   min-height: auto;
   display: inline-block;
@@ -246,7 +254,7 @@ height: 600px;
 }
 
 .work-body {
-  background-color: lightgray;
+  background-color: var(--secondary-color);
   padding-right: 3%;
   padding-left: 3%;
 }
