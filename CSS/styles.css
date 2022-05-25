@@ -284,6 +284,18 @@ height: 600px;
   width: 100px;
 }
 
+.frontend-sticker {
+  height: 200px;
+  width: 300px;
+  margin: 30px;
+}
+
+.joda-meme {
+  height: 200px;
+  width: 300px;
+  
+}
+
 /* For Mobile */
 /* @media screen and (max-width: 950px) {
   .profile-intro {
