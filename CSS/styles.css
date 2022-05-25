@@ -90,6 +90,7 @@ a {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-duration: 0.2s;
   transition-property: opacity;
+  margin-top: 20px;
 }
 
 .button:hover, button:focus {
@@ -275,6 +276,10 @@ height: 600px;
 }
 
 .learning-sticker{
+  height: 100px;
+  width: 100px;
+}
+.creativity-sticker {
   height: 100px;
   width: 100px;
 }
