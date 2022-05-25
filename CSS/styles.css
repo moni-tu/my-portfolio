@@ -14,8 +14,8 @@ Paste the output of the autoprefixer into the style.production.css.
 */
 
 :root {
-  --primary-color: #0E57DC;
-  --secondary-color: #EAD084; 
+  --primary-color: rgb(93, 152, 201);
+  --secondary-color: rgb(51, 62, 70); 
   /* the exercise tells me to replace all colors, but does it make sense to replace colors like white and black? 
   or the red color for a visited website? I am never going to repeat the color red apart from this purpose*/
 }
@@ -32,14 +32,16 @@ body {
 }
 
 h1 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 50px;
+  color: --secondary-color;
   font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
         
 h2 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 40px;
+  color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
         
 h3 {
@@ -48,14 +50,19 @@ h3 {
 }  
 
 h4 {
-  color: rgba(68, 30, 240, 0.365);
+  color: whitesmoke;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* text-shadow: white; */
 }
 
 a {
-  color: #7010ac;
+  color: var(--secondary-color);
   text-decoration: none;
   transition: 0.25s color;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #ad84c6
@@ -64,7 +71,7 @@ a {
 }
 
 .github-anchor:hover {
-  color:red;
+  color: whitesmoke;
 }
 
 .github-anchor:active {
@@ -76,21 +83,21 @@ a {
   /* overwrites browser defaults and resets the border */
   border: none;
   /* takes the font from the outer container */
-  font-family: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: inline-block;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color:  rgba(68, 30, 240, 0.365);
+  background-color:  rgb(51, 62, 70);
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition-duration: 0.2s;
-  transition-property: opacity;
-  margin-top: 20px;
+  /* transition-duration: 0.2s;
+  transition-property: opacity; */
+  margin-top: 50px;
 }
 
 .button:hover, button:focus {
@@ -98,7 +105,7 @@ a {
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .profile_portrait {
@@ -285,12 +292,14 @@ height: 600px;
 }
 
 .frontend-sticker {
+  margin-top: 120px;
   height: 200px;
   width: 300px;
-  margin: 30px;
+
 }
 
 .joda-meme {
+  margin-top: 120px;
   height: 200px;
   width: 300px;
   
@@ -320,7 +329,7 @@ height: 600px;
   padding-bottom: 5px;
   padding-right: 5%;
   padding-left: 3%;
-  background-color: lightgray;
+  background-color:  var(--primary-color);
 }
 
 /* .about-table {
@@ -366,6 +375,7 @@ border: 4px solid #ddd;
 }
 
 .berlin-illustration {
+  margin-top: 140px;
   max-width: 550px;
   height: auto;
 }
