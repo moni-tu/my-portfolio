@@ -66,16 +66,12 @@ a {
 }
 
 #ad84c6
-.github-anchor {
+.text-anchor {
   color: var(--primary-color);
 }
 
-.github-anchor:hover {
+.text-anchor:hover {
   color: whitesmoke;
-}
-
-.github-anchor:active {
-  color: var(--secondary-color);
 }
 
 .button {
@@ -153,7 +149,7 @@ a {
 }
 
 .navigation-list_item:hover{
-  color:red;
+  color: var(--primary-color);
 }
 
 .navigation-list_item:active{
@@ -207,7 +203,7 @@ a {
 }
 
 .project-list_item--githublink:hover{
-  color:red;
+  color: white;
 }
 
 .project-list_item--githublink:active{
