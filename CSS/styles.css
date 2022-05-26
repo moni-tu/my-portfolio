@@ -167,8 +167,9 @@ a {
 .project-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 20px;
+  margin-bottom: 40px;
 }
 
 .project-list_item {
@@ -178,6 +179,11 @@ a {
   min-height: auto;
   display: inline-block;
   padding: 20px;
+  /* border-bottom: #edc655;
+  border-bottom-style: solid;
+  border-right: #edc655;
+  border-right-style: solid; */
+  box-shadow: 5px 5px whitesmoke;
 }
 .project-list_item_screenshot {
   grid-area: photo;
@@ -258,13 +264,15 @@ adapt CSS rules for different devices */
 }
 /* the following code does not work, the background color does not change! */
 .contact-page {
-background-color: lightgray;
+background-color: var(--primary-color);
 height: 600px;
 }
 
 .work-body {
   background-color: var(--secondary-color);
-  padding-right: 3%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5%;
   padding-left: 3%;
 }
 
@@ -324,6 +332,12 @@ height: 600px;
 .elonmusk-meme {
   height: 200px;
   width: 300px;
+}
+/* work page */
+.idea-sticker {
+  margin-top: 30px;
+  height: 110px;
+  width: 110px;
 }
 /* About Page grid - setting for different screens */
 @media all and (max-width: 700px) {
