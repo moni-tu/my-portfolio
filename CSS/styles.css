@@ -111,6 +111,35 @@ a {
   opacity: 0.8;
   color: var(--primary-color);
 }
+/* button in contact page, same as button in about page but with linkedin sticker */
+.contact-button {
+  background: url("./Img/linkedin-sticker.png");
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: inline-block;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  /* background-color:  rgb(51, 62, 70); */
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  /* border-bottom: 2px solid rgba(0, 0, 0, 0.3); */
+  /* transition-duration: 0.2s;
+  transition-property: opacity; */
+}
+
+.contact-button:hover, contact-button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  color: var(--primary-color);
+}
 
 .profile_portrait {
   width: 240px;
@@ -339,6 +368,13 @@ height: 600px;
   height: 110px;
   width: 110px;
 }
+
+.linkedin-sticker {
+  margin-top: 30px;
+  height: 110px;
+  width: 110px;
+}
+
 /* About Page grid - setting for different screens */
 @media all and (max-width: 700px) {
   .about-grid {
