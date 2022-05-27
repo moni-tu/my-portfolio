@@ -338,6 +338,7 @@ height: 600px;
 .about-grid_item {
   text-align: center;
   padding: 20px;
+  width: 100%;
 }
 
 .about-grid_item_img {
@@ -398,6 +399,11 @@ height: 600px;
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
+  .about_grid_item {
+    width: 100%;
+    text-size-adjust: auto;
+  }
   .about-body {
     padding: 0%;
     margin: 0%;
@@ -405,6 +411,7 @@ height: 600px;
 
   .page-header_item {
     flex: 0 1 ;
+    width: 100%;
 
   }
   .page-header_logo{
