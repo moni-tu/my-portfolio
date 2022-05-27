@@ -396,8 +396,11 @@ height: 600px;
 /* About Page grid - setting for different screens */
 @media all and (max-width: 750px) {
   .about-grid {
+    display: grid;
+    /* justify-content: space-evenly; */
     grid-template-columns: 1fr;
     grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 
   .about_grid_item {
@@ -407,7 +410,7 @@ height: 600px;
   .about-body {
     padding: 0%;
     margin: 0%;
-  }
+  } 
 
   .page-header_item {
     flex: 0 1 ;
@@ -436,9 +439,9 @@ height: 600px;
 } */
 
 @media all and (max-width: 750px) {
-  .about-grid {
+  /* .about-grid {
     grid-gap: 10px;
-  }
+  } */
   .about-grid_item:last-child {
     grid-column: auto/auto;
     grid-row: auto/auto;
