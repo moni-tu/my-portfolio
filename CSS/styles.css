@@ -332,6 +332,13 @@ adapt CSS rules for different devices */
   }
 }
 /* -------------------- styles for myMovies Case Study ---------------- */
+.caseStudy-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  justify-content: space-evenly;
+  grid-gap: 20px;
+}
 
 .caseStudy-grid_item {
   text-align: center;
@@ -351,14 +358,14 @@ adapt CSS rules for different devices */
 
 .movie-card-screenshot {
   margin-top: 150px;
-  height: 300px;
+  height: 220px;
   width: 600px;
   border-radius: 1%;
 }
 
 .project-folder-screenshot {
   /* margin-top: 120px; */
-  height: 500px;
+  height: 400px;
   width: 450px;
   border-radius: 1%;
 }
@@ -366,7 +373,7 @@ adapt CSS rules for different devices */
 .movie-card-props-screenshot{
   margin-top: 130px;
   height: 350px;
-  width: 600px;
+  width: 550px;
   border-radius: 1%;
 }
 
