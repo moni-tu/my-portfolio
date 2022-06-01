@@ -14,8 +14,17 @@ Paste the output of the autoprefixer into the style.production.css.
 */
 
 :root {
-  --primary-color: rgb(93, 152, 201);
-  --secondary-color: rgb(51, 62, 70); 
+  /* sapphire blue */
+  --primary-color: rgb(26, 101, 158);
+  /* USAFA blue */
+  --secondary-color: rgb(0, 78, 137); 
+  /* orange crayola */
+  --tertiary-color: rgb(255, 107, 53);
+   /* peach crayola */
+  --fourth-color: rgb(247, 197, 159);
+  /* beige */
+  --fifth-color: rgb(239, 239, 208);
+  
   /* the exercise tells me to replace all colors, but does it make sense to replace colors like white and black? 
   or the red color for a visited website? I am never going to repeat the color red apart from this purpose*/
 }
@@ -33,14 +42,14 @@ body {
 /* About page title */
 h1 {
   font-size: 50px;
-  color: --secondary-color;
+  color: var(--secondary-color);
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   /* About page grid titles */     
 h2 {
   font-size: 40px;
-  color: whitesmoke;
+  color: var(--fifth-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 /* work page header, where there is an inversion of colors from About page */    
@@ -52,20 +61,20 @@ h3 {
 }  
 /* work page project item title */ 
 h4 {
-  color: var(--secondary-color);
+  color: whitesmoke;
   font-size: 40px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* text-shadow: white; */
 }
 /* Work page "description" */
 h5 {
-  color: whitesmoke;
+  color: var(--secondary-color);
   font-size: 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
   text-decoration: none;
   transition: 0.25s color;
   font-weight: bold;
@@ -73,14 +82,18 @@ a {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#ad84c6
-.text-anchor {
+a:hover {
   color: var(--primary-color);
 }
 
-.text-anchor:hover {
-  color: whitesmoke;
+/* #ad84c6
+.text-anchor {
+  color: var(--tertiary-color);
 }
+
+.text-anchor:hover {
+  color: var(--tertiary-color);
+} */
 
 .button {
 
@@ -90,15 +103,15 @@ a {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: inline-block;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color:  rgb(51, 62, 70);
-  color: white;
+  background-color:  var(--secondary-color);
+  color: whitesmoke;
   font-size: 20px;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
   /* transition-duration: 0.2s;
   transition-property: opacity; */
   margin-top: 50px;
@@ -109,7 +122,7 @@ a {
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-  color: var(--primary-color);
+  color: var(--fifth-color);
 }
 /* button in contact page, same as button in about page but with linkedin sticker */
 .contact-button {
@@ -145,7 +158,7 @@ a {
 .profile_portrait {
   width: 240px;
   height: 320px;
-  /*border-radius: 50%; */
+  border-radius: 15%;
 }
 
 .page-footer {
@@ -192,25 +205,30 @@ a {
   display: inline-block;
   margin-left: 15px;
 }
-
-.navigation-list_item:hover{
+/* nav items and h1 have the same color */
+.navigation-list_item {
   color: var(--primary-color);
 }
 
-.navigation-list_item:active{
-  color: var(--secondary-color);
+.navigation-list_item:hover{
+  color: var(--tertiary-color);
 }
+
+/* the followings do not target anything, it is the anchor tag "a" instead that works for the nav bar
+.navigation-list_item:active{
+  color: var(--primary-color);
+} */
 
 .project-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
   margin-bottom: 40px;
 }
 
 .project-list_item {
-  background-color: var(--primary-color);
+  background-color: var(--fourth-color);
   text-align: center;
   width: auto;
   min-height: auto;
@@ -220,7 +238,7 @@ a {
   border-bottom-style: solid;
   border-right: #edc655;
   border-right-style: solid; */
-  box-shadow: 5px 5px whitesmoke;
+  box-shadow: 5px 5px var(--primary-color);
 }
 .project-list_item_screenshot {
   grid-area: photo;
@@ -310,12 +328,14 @@ adapt CSS rules for different devices */
 }
 /* the following code does not work, the background color does not change! */
 .contact-page {
-background-color: var(--primary-color);
+background-color: var(--fourth-color);
+/* background: rgb(23,85,133);
+background: linear-gradient(309deg, rgba(23,85,133,1) 0%, rgba(26,101,158,1) 42%, rgba(30,118,186,1) 100%); */
 height: 600px;
 }
 
 .work-body {
-  background-color: var(--secondary-color);
+  background-color: var(--fifth-color);
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 5%;
@@ -407,10 +427,6 @@ height: 600px;
     width: 100%;
     text-size-adjust: auto;
   }
-  .about-body {
-    padding: 1%;
-    
-  } 
 
   .page-header_item {
     flex: 0 1 ;
@@ -436,10 +452,6 @@ height: 600px;
     width: 100%;
     text-size-adjust: auto;
   }
-  .about-body {
-    padding: 1%;
-    
-  } 
 
   .page-header_item {
     flex: 0 1 ;
@@ -482,13 +494,15 @@ height: 600px;
 } */
 
 .about-body {
+  /* background: rgb(23,85,133);
+  background: linear-gradient(309deg, rgba(23,85,133,1) 0%, rgba(26,101,158,1) 42%, rgba(30,118,186,1) 100%); */
   text-align: left;
   padding-top: 5px;
   padding-bottom: 5px;
   /* same padding as in Work page, class "work-body" */
   padding-right: 5%;
   padding-left: 3%;
-  background-color:  var(--primary-color);
+  background-color:  var(--fourth-color);
 }
 
 .contact-body {
