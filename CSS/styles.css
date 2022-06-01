@@ -240,6 +240,11 @@ a:hover {
   border-right-style: solid; */
   box-shadow: 5px 5px var(--primary-color);
 }
+
+.project-list_item:hover {
+  transform: scale(1.01);
+  transition: 0.2s;
+}
 .project-list_item_screenshot {
   grid-area: photo;
 }
