@@ -351,17 +351,36 @@ adapt CSS rules for different devices */
 
 .movie-card-screenshot {
   margin-top: 150px;
-  height: 200px;
-  width: 500px;
+  height: 300px;
+  width: 600px;
   border-radius: 1%;
 }
 
 .project-folder-screenshot {
   /* margin-top: 120px; */
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 450px;
   border-radius: 1%;
 }
+
+.movie-card-props-screenshot{
+  margin-top: 130px;
+  height: 350px;
+  width: 600px;
+  border-radius: 1%;
+}
+
+.login-card-screenshot{
+  height: 500px;
+  width: 700px;
+  border-radius: 1%;
+}
+
+/* .login-view-screenshot{
+  height: 300px;
+  width: 600px;
+  border-radius: 1%;
+} */
 
 /* the following code does not work, the background color does not change! */
 .contact-page {
