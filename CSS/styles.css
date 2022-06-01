@@ -234,6 +234,9 @@ a:hover {
   min-height: auto;
   display: inline-block;
   padding: 20px;
+  border-radius: 1%;
+  border-color: var(--primary-color);
+  border-bottom: 2px;
   /* border-bottom: #edc655;
   border-bottom-style: solid;
   border-right: #edc655;
@@ -252,6 +255,16 @@ a:hover {
 .project-list_item_screenshot>img {
   object-fit: cover;
   width: 100%;
+}
+
+.project-list_item_screenshot_chatapp {
+  object-fit: cover;
+  text-align: center;
+  grid-area: photo;
+}
+
+.project-list_item_screenshot_angular {
+  object-fit: cover;
 }
 
 /* .mymovies-screenshot{
