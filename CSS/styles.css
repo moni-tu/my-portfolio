@@ -15,15 +15,15 @@ Paste the output of the autoprefixer into the style.production.css.
 
 :root {
   /* sapphire blue */
-  --primary-color: rgb(26, 101, 158);
+  --primary-color: #3e92cc;
   /* USAFA blue */
-  --secondary-color: rgb(0, 78, 137); 
+  --secondary-color: #0a2463; 
   /* orange crayola */
-  --tertiary-color: rgb(255, 107, 53);
+  --tertiary-color: #d8315b;
    /* peach crayola */
   --fourth-color: rgb(247, 197, 159);
   /* beige */
-  --fifth-color: rgb(239, 239, 208);
+  --fifth-color: #fffaff;
   
   /* the exercise tells me to replace all colors, but does it make sense to replace colors like white and black? 
   or the red color for a visited website? I am never going to repeat the color red apart from this purpose*/
@@ -52,16 +52,15 @@ h2 {
   color: var(--fifth-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/* work page header, where there is an inversion of colors from About page */    
+/* myMovies case study */    
 h3 {
-  font-size: 30px;
-  color: var(--tertiary-color);
-  font-weight: bold;
+  font-size: 20px;
+  color: var(--fifth-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }  
 /* work page project item title */ 
 h4 {
-  color: whitesmoke;
+  color: black;/* var(--primary-color) */
   font-size: 40px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* text-shadow: white; */
@@ -74,7 +73,7 @@ h5 {
 }
 
 a {
-  color: var(--tertiary-color);
+  color: black;
   text-decoration: none;
   transition: 0.25s color;
   font-weight: bold;
@@ -83,7 +82,7 @@ a {
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--fifth-color);
 }
 
 /* #ad84c6
@@ -103,7 +102,7 @@ a:hover {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: inline-block;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color:  var(--secondary-color);
+  background-color:  var(--tertiary-color);
   color: whitesmoke;
   font-size: 20px;
   text-decoration: none;
@@ -111,7 +110,7 @@ a:hover {
   padding: 10px;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   /* transition-duration: 0.2s;
   transition-property: opacity; */
   margin-top: 50px;
@@ -121,8 +120,6 @@ a:hover {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-  color: var(--fifth-color);
 }
 /* button in contact page, same as button in about page but with linkedin sticker */
 .contact-button {
@@ -206,13 +203,18 @@ a:hover {
   margin-left: 15px;
 }
 /* nav items and h1 have the same color */
-.navigation-list_item {
-  color: var(--primary-color);
+.navigation-list_item{
+  color: black;
+  border: 0px solid transparent;
 }
 
 .navigation-list_item:hover{
-  color: var(--tertiary-color);
+  color: black;
+  border-bottom: 2px solid var(--primary-color);
+  transition: all 0.3s ease;
+  
 }
+
 
 /* the followings do not target anything, it is the anchor tag "a" instead that works for the nav bar
 .navigation-list_item:active{
@@ -223,12 +225,12 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 7px;
+  grid-gap: 10px;
   margin-bottom: 40px;
 }
 
 .project-list_item {
-  background-color: var(--fourth-color);
+  background-color: var(--primary-color);
   text-align: center;
   width: auto;
   min-height: auto;
@@ -404,7 +406,7 @@ adapt CSS rules for different devices */
 
 /* the following code does not work, the background color does not change! */
 .contact-page {
-background-color: var(--fourth-color);
+background-color: var(--primary-color);
 /* background: rgb(23,85,133);
 background: linear-gradient(309deg, rgba(23,85,133,1) 0%, rgba(26,101,158,1) 42%, rgba(30,118,186,1) 100%); */
 height: 600px;
@@ -578,7 +580,7 @@ height: 600px;
   /* same padding as in Work page, class "work-body" */
   padding-right: 5%;
   padding-left: 3%;
-  background-color:  var(--fourth-color);
+  background-color:  var(--primary-color);
 }
 
 .contact-body {
@@ -639,6 +641,16 @@ height: 600px;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+}
+/* --------------------------Contact page styles-------------------- */
+.contact-footer{
+  font-size: small;
+  font-family: inherit;
+}
+
+.contact-footer-links{
+  font-size: small;
+  color: black;
 }
 
 
