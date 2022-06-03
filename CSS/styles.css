@@ -73,7 +73,7 @@ h5 {
 }
 
 a {
-  color: black;
+  color: var(--secondary-color);
   text-decoration: none;
   transition: 0.25s color;
   font-weight: bold;
@@ -82,7 +82,9 @@ a {
 }
 
 a:hover {
-  color: var(--fifth-color);
+  color: var(--secondary-color);/* var(--tertiary-color) */
+  border-bottom: 1px solid  var(--secondary-color);
+  transition: all 0.1s ease;
 }
 
 /* #ad84c6
@@ -103,7 +105,7 @@ a:hover {
   display: inline-block;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color:  var(--tertiary-color);
-  color: whitesmoke;
+  color: var(--fifth-color);
   font-size: 20px;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
@@ -116,10 +118,10 @@ a:hover {
   margin-top: 50px;
 }
 
-.button:hover, button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
+.button:hover {
+  font-size: 20.3px;
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
+ 
 }
 /* button in contact page, same as button in about page but with linkedin sticker */
 .contact-button {
@@ -149,7 +151,7 @@ a:hover {
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 
 .profile_portrait {
@@ -205,14 +207,14 @@ a:hover {
 }
 /* nav items and h1 have the same color */
 .navigation-list_item{
-  color: black;
+  color: rgb(104, 102, 102);
   border: 0px solid transparent;
 }
 
 .navigation-list_item:hover{
   color: black;
-  border-bottom: 2px solid var(--primary-color);
-  transition: all 0.3s ease;
+  border-bottom: 1px solid  black;
+  /* transition: all 0.1s ease; */
   
 }
 
@@ -652,6 +654,10 @@ height: 600px;
 .contact-footer-links{
   font-size: small;
   color: black;
+}
+.contact-footer-links:hover{
+  font-size: small;
+  color: grey;
 }
 
 
