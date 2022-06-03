@@ -653,11 +653,12 @@ height: 600px;
 
 .contact-footer-links{
   font-size: small;
-  color: black;
+  color: grey;
 }
 .contact-footer-links:hover{
   font-size: small;
-  color: grey;
+  color: black;
+  border-bottom: none;
 }
 
 
